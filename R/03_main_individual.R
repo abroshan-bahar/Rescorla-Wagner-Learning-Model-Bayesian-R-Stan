@@ -11,7 +11,6 @@ sub01<-sub01[order(sub01$blk,sub01$trl),]
 #keep valid card identities for inspection (frcA and frcB are the identity IDs of those cards)
 sub01$card_left <- sub01$frcA + 1
 sub01$card_right <- sub01$frcB + 1
-sub01$chosen_card <- sub01$ch + 1
 
 # Missing responses have ch = -1
 sub01$chosen_card <- ifelse(
