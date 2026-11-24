@@ -76,7 +76,7 @@ nIter<-2000
 nChains<-4
 nWarmup<-floor(nIter/2)
 nThin<-1
-modelFile<-'Stan/main_indivitual.stan'
+modelFile<-'Stan/main_individual.stan'
 fit_rl<-stan(
   modelFile,
   data=dataList,
