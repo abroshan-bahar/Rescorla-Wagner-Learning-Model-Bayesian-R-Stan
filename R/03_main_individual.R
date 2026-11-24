@@ -37,10 +37,8 @@ head(sub01[,c('block','trial','card_left','card_right','chosen_card','choice','r
 
 
 # prepare stan data -------------------------------------------------------------------
-# Keep the complete trial sequence, including missing responses.
-# -1 indicates an invalid choice.
-# Missing rewards are assigned a placeholder of 0.
-# Stan will ignore these trials
+# Exclude trials with missing choices or outcomes.
+# Assumes excluded trials contain no learning-relevant feedback.
 
 
 #exclude the subjects with NA
