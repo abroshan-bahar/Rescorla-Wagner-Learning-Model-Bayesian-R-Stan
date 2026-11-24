@@ -80,9 +80,9 @@ fit_rl<-stan(
   iter=nIter,
   warmup=nWarmup,
   chains=nChains,
+  thin=nThin,
   init='random',
   seed=12345
 )
-
 
 
