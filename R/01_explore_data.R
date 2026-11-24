@@ -19,7 +19,7 @@ dim(data)
 #descriptive statistics
 summary(data)
 #number of participants
-nSubjects <- length(data$subj)
+nSubjects <- length(unique(data$subj))
 #reward outcomes and experimental conditions
 table(data$rw, useNA='ifany')
 table(data$cond)
